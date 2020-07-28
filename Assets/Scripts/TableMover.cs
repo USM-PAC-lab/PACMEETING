@@ -12,6 +12,7 @@ public class TableMover : MonoBehaviour
     public float Shoulder;
     public float DistanceY;
     public float TableDistance;
+    public float TableHeight;
     Vector3 tempPos; // Needed for moving the stimulus.
 
 
@@ -24,8 +25,8 @@ public class TableMover : MonoBehaviour
     {
         Shoulder = Variables.shoulder;
         DistanceZ = Stimpos * Variables.arm;
-        TableDistance = 1;//How far the table is from 0.
-
+        TableDistance = 0.15f;//How far the table is from 0.
+        TableHeight = 0.062f;
     }
 
     void Update()
@@ -33,7 +34,7 @@ public class TableMover : MonoBehaviour
 
         tempPos = transform.position;
         tempPos.z = transform.localScale.z /2 + TableDistance; //This should set the table in front of the user. 
-        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(-angle))) - 2f; //places  the table just below the ball.
+        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(-angle)) - TableHeight); //places  the table just below the ball.
         Debug.Log(tempPos.y);
         transform.position = tempPos; // This does the actual stimulus moving.
 

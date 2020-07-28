@@ -227,6 +227,7 @@ GameObject:
   - component: {fileID: 1945276200}
   - component: {fileID: 1945276199}
   - component: {fileID: 1945276198}
+  - component: {fileID: 1945276203}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -317,3 +318,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1945276203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1945276197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c970523abbde68d4c8a3b21e19598445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceZ: 0
+  Stimpos: 1
+  angle: 0.523599
+  Shoulder: 0
+  DistanceY: 0
+  TableDistance: 0
+  TableHeight: 0

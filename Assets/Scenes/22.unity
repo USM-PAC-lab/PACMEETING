@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 1806001719}
   - component: {fileID: 1806001718}
   - component: {fileID: 1806001717}
-  - component: {fileID: 1806001716}
+  - component: {fileID: 1806001721}
   m_Layer: 0
   m_Name: Table
   m_TagString: Untagged
@@ -234,22 +234,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1806001716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1806001715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ead9b45955812e42ba1515cd0029bd6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DistanceZ: 0
-  Stimpos: 0.9
-  angle: 1.0472
-  Shoulder: 0
-  DistanceY: 0
 --- !u!65 &1806001717
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -317,3 +301,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1806001721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806001715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c970523abbde68d4c8a3b21e19598445, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DistanceZ: 0
+  Stimpos: 0.9
+  angle: 1.0472
+  Shoulder: 0
+  DistanceY: 0
+  TableDistance: 0
+  TableHeight: 0
