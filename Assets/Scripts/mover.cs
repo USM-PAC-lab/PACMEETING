@@ -34,8 +34,8 @@ public class mover : MonoBehaviour
     {
         
         tempPos = transform.position;
-        tempPos.z = DistanceZ;       
-        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(angle))/2);
+        tempPos.z = DistanceZ;
+        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(-angle)));
         Debug.Log(tempPos.y);
         transform.position = tempPos; // This does the actual stimulus moving.
 

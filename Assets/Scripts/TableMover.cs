@@ -33,7 +33,7 @@ public class TableMover : MonoBehaviour
 
         tempPos = transform.position;
         tempPos.z = transform.localScale.z /2 + TableDistance; //This should set the table in front of the user. 
-        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(angle)) / 2) - 0.9f; //places  the table just below the ball.
+        tempPos.y = Shoulder + (DistanceZ * (Mathf.Tan(-angle))) - 2f; //places  the table just below the ball.
         Debug.Log(tempPos.y);
         transform.position = tempPos; // This does the actual stimulus moving.
 
